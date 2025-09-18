@@ -6,7 +6,7 @@ instance_class: F2
 
 # Environment variables (demo credentials)
 env_variables:
-  DEMO_USERNAME: "testuser"
+  DEMO_USERNAME: "testuser@gmail.com"
   DEMO_PASSWORD: "Test@123"
 
 # URL handlers
