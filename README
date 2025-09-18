@@ -1,0 +1,39 @@
+## ⚙ Setup & Deployment
+
+### 1. Clone Repository
+
+bash
+git clone https://github.com/Dippp10/gen-ai-exchange.git
+cd gen-ai-exchange
+
+
+### 2. Add API Key
+
+In Google Cloud Console, set your OpenAI key as an *environment variable*:
+
+bash
+gcloud secrets create OPENAI_API_KEY --data-file=<(echo -n "your_api_key_here")
+
+
+Or set it directly before deploying:
+
+bash
+export OPENAI_API_KEY="your_api_key_here"
+
+
+### 3. Deploy to App Engine
+
+bash
+gcloud app deploy
+
+
+### 4. Open the App
+
+bash
+gcloud app browse
+
+
+Your live app will be available at:
+
+
+https://<project-id>.uc.r.appspot.com
