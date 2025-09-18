@@ -1,0 +1,33 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gen AI Exchange Prototype</title>
+</head>
+<body>
+  <h1>AI Test Case Generator</h1>
+
+  <!-- Language Selection -->
+  <label for="language">Select Language:</label>
+  <select id="language">
+    <option>Python</option>
+    <option>JavaScript</option>
+    <option>Java</option>
+  </select>
+  <br /><br />
+
+  <!-- Code Input -->
+  <textarea id="code" rows="8" cols="60" placeholder="Paste your code here..."></textarea>
+  <br />
+  <button onclick="generateTestCases()">Generate Test Cases</button>
+  <button onclick="downloadTestCases()">Download</button>
+
+  <!-- Output -->
+  <h3>Generated Test Cases:</h3>
+  <pre id="output"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
